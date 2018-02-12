@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>约自习</title>
+<script src="../src/js/jquery.min.js"></script>
+<link rel="stylesheet" href="../src/css/bootstrap.min.css">
+<link href="../src/css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div class="zhezhao">
+
+    </div>
+    <div class="sendMessage">
+        <div class="send-head">发私信</div>
+        <div>
+            发给     <span class="">        亚丝娜</span>
+            <br>
+            <textarea class="send-text"></textarea>
+        </div>
+        <div class="send-footer">
+            <button>取消</button>
+            <button>发送</button>
+        </div>
+    </div>
+    <!--顶部导航-->
+    <div class="header">
+            <div class="container">
+                <a class="logo" href="index.html" class="selected">
+                    Laffows++
+                </a>
+                <a href="home.html" >个人中心</a>
+                <a id="nav-study" href="#" class="selected">学习</a>
+                <div class="nav-study-children">
+                    <a href="classroom.html">空教室查询</a>
+                    <a href="selfStudy.html">约自习</a>
+                </div>
+                <a id="nav-friends" href="#">交友</a>
+                <div id="nav-friends-children">
+                    <a href="chat.html">下课聊</a>
+                    <a href="love.html">表白墙</a>
+                </div>
+                <a href="work.html">求职</a>
+                <div class="pull-right">
+                        <a href="message.html" >消息(<span class="messageNum">4</span>)</a>
+                        <a href="home.html" id="index-change">
+                            <img src="../images/head.jpg" alt="个人头像"/>
+                            <span>Month</span>
+                        </a>
+                        <a href="index.html" class="exit">
+                            <img src="../images/退出.png" title="退出">
+                        </a>
+                    </div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+    <!--主体内容-->
+    <div class="container">
+        <!--筛选条件-->
+        <div>
+            <label for="">时间</label>
+            <select id="">
+                <option>星期一</option>
+                <option>星期二</option>
+                <option>星期三</option>
+                <option>星期四</option>
+                <option>星期五</option>
+                <option>星期六</option>
+                <option>星期日</option>
+            </select>
+            <span>至</span>
+            <select id="">
+                <option>星期一</option>
+                <option>星期二</option>
+                <option>星期三</option>
+                <option>星期四</option>
+                <option>星期五</option>
+                <option>星期六</option>
+                <option>星期日</option>
+            </select>
+            <label for="">地点</label>
+            <input type="checkbox">图书馆
+            <input type="checkbox">空闲教室
+            <button>查询</button>
+            <button class="publish">发布预约</button>
+            
+           
+        </div>
+        <!--筛选结果-->
+        <div class="row studyList">
+            <div class="col-md-3 studyMessage">
+                <div class="sM-title">一起来学习ES6</div>
+                <div class="sM-text">附加说明</div>
+                <div>已有<span class="likedPeople">0</span>人感兴趣</div>
+                <div>发布者：<span class="sM-author">亚丝娜</span></div>
+                <div>地点：<span class="sM-address" tid="2">16-102</span></div>
+                <div>时间：<span class="sM-time">2017/12/30</span></div>
+                <hr>
+                <div class="btnGroup">
+                    <button class="like">感兴趣</button>
+                    <button class="contact">与TA联系</button>
+                </div>
+            </div>
+            <div class="col-md-3 studyMessage">
+                <div class="sM-title">努力考研五道口</div>
+                <div class="sM-text">附加说明</div>
+                <div>已有<span class="likedPeople">0</span>人感兴趣</div>
+                <div>发布者：<span class="sM-author">亚丝娜</span></div>
+                <div>地点：<span class="sM-address" tid="2">图书馆</span></div>
+                <div>时间：<span class="sM-time">2017/12/29</span></div>
+                <hr>
+                <div class="btnGroup">
+                        <button class="like">感兴趣</button>
+                        <button class="contact">与TA联系</button>
+                </div>
+            </div>
+            <div class="col-md-3 studyMessage">
+                <div class="sM-title">一起来学习ES6</div>
+                <div class="sM-text">附加说明</div>
+                <div>已有<span class="likedPeople">0</span>人感兴趣</div>
+                <div>发布者：<span class="sM-author">亚丝娜</span></div>
+                <div>地点：<span class="sM-address" tid="2">16-102</span></div>
+                <div>时间：<span class="sM-time">2017/12/30</span></div>
+                <hr>
+                <div class="btnGroup">
+                    <button class="like">感兴趣</button>
+                    <button class="contact">与TA联系</button>
+                </div>
+            </div>
+            <div class="col-md-3 studyMessage">
+                <div class="sM-title">一起来学习ES6</div>
+                <div class="sM-text">附加说明</div>
+                <div>已有<span class="likedPeople">0</span>人感兴趣</div>
+                <div>发布者：<span class="sM-author">亚丝娜</span></div>
+                <div>地点：<span class="sM-address" tid="2">16-102</span></div>
+                <div>时间：<span class="sM-time">2017/12/30</span></div>
+                <hr>
+                <div class="btnGroup">
+                    <button class="like">感兴趣</button>
+                    <button class="contact">与TA联系</button>
+                </div>
+            </div>
+            <div class="col-md-3 studyMessage">
+                <div class="sM-title">一起来学习ES6</div>
+                <div class="sM-text">附加说明</div>
+                <div>已有<span class="likedPeople" id="what">0</span>人感兴趣</div>
+                <div>发布者：<span class="sM-author">亚丝娜</span></div>
+                <div>地点：<span class="sM-address" tid="2">16-102</span></div>
+                <div>时间：<span class="sM-time">2017/12/30</span></div>
+                <hr>
+                <div class="btnGroup">
+                    <button class="like">感兴趣</button>
+                    <button class="contact">与TA联系</button>
+                </div>
+            </div>
+        </div>
+        <!--发布-->
+        <div class="fabu">
+            <div class="fabu-head">
+                发布新预约
+            </div>
+                <div>
+                        <label for="">时间</label>
+                        <select id="">
+                            <option>星期一</option>
+                            <option>星期二</option>
+                            <option>星期三</option>
+                            <option>星期四</option>
+                            <option>星期五</option>
+                            <option>星期六</option>
+                            <option>星期日</option>
+                        </select>
+                        <span>至</span>
+                        <select id="">
+                            <option>星期一</option>
+                            <option>星期二</option>
+                            <option>星期三</option>
+                            <option>星期四</option>
+                            <option>星期五</option>
+                            <option>星期六</option>
+                            <option>星期日</option>
+                        </select>
+                        <label for="">地点</label>
+                        <input type="checkbox">图书馆
+                        <input type="checkbox">空闲教室
+            </div>
+            <div>
+                <input type="text" class="fabu-title" placeholder="标题">
+                <textarea class="fabu-text">
+
+                </textarea>
+            </div>
+            <div class="fabu-footer">
+                    <button class="quxiao">取消</button>
+                    <button class="send">发送</button>
+            </div>
+    </div>
+    </div>
+    <div class="footer">
+            <div class="footer_child">
+                <img src="../images/footer-logo.gif">
+                <div class="footer_child_right">
+                        <p>
+                                <a href="index.html">主页</a>
+                                <span>|</span>
+                                <a href="#">关于我们</a>
+                                <span>|</span>
+                                <a href="#">联系我们</a>
+                        </p>
+                        <p><spe>Laffows++©2017 All Rights Reserved</spe></p>
+                </div>
+            </div>
+        </div>
+        <script>
+                $(function(){
+                    /**
+                     * @author yin zheng
+                     * 2018/1/17
+                     * 修复历史遗留问题
+                     * 以后再重构
+                    */
+                    var $zhezhao=$(".zhezhao");                   //全局遮罩层
+                    var $sendMessage=$(".sendMessage");           //站内信
+                    var $fabu=$(".fabu");                         //发布新消息
+                    function adjust(){
+                        var height=$sendMessage.height();
+                        var width=$sendMessage.width();
+                        $sendMessage.css({
+                            "margin-left":-width/2,
+                            "margin-top":-height/2
+                        });
+                        height=$fabu.height();
+                        width=$fabu.width();
+                        $fabu.css({
+                            "margin-left":-width/2,
+                            "margin-top":-height/2
+                        });
+                    }
+                    adjust();
+                    window.onresize=function(){
+                        adjust();
+                    }
+                    $(".contact").click(function(){
+                        $zhezhao.show();
+                        $sendMessage.show();
+                    });
+                    $(".send-footer button").click(function(){
+                        $zhezhao.hide();
+                        $sendMessage.hide();
+                    });
+                    $(".quxiao").click(function(){
+                        $zhezhao.hide();
+                        $fabu.hide();
+                    })
+                    $(".publish").click(function(){
+                        $zhezhao.show();
+                        $fabu.show();
+                    });
+                    //此处存在重复点赞问题 有办法解决 不过比较复杂
+                    $(".studyList").on("click",".like",function(){
+                            var cs=1;
+                            if(cs%2==0){
+                                var num=$(this).parents(".studyMessage").find(".likedPeople").text();
+                                num--;
+                                $(this).parents(".studyMessage").find(".likedPeople").text(num);
+                                cs++;
+                            }
+                            if(cs%2!=0){
+                                var num=$(this).parents(".studyMessage").find(".likedPeople").text();
+                                num++;
+                                $(this).parents(".studyMessage").find(".likedPeople").text(num);
+                                cs++;
+                            }
+                    })
+                    $(".send").click(function(){
+                        var text=$(".fabu-text").val();
+                        var title=$(".fabu-title").val();
+                        $(".studyList").append('<div class="col-md-3 studyMessage"><div class="sM-title">'+title+'</div><div class="sM-text">'+text+'</div><div>已有<span class="likedPeople">0</span>人感兴趣</div><div>发布者：<span class="sM-author">Month</span></div><div>地点：<span class="sM-address" tid="2">16-102</span></div><div>时间：<span class="sM-time">2018/1/1</span></div><hr><div class="btnGroup"><button class="like">感兴趣</button><button class="contact">与TA联系</button></div></div>');
+                        $zhezhao.hide();
+                        $(".fabu").hide();
+                    });
+                })
+            </script>
+    <script src="../src/js/app.js"></script>
+</body>
+</html>
