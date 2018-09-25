@@ -166,7 +166,7 @@ $(function(){
             var oid=$(this).attr("oid");
             var price=$(".nowPrice[oid="+oid+"]").text();
             var num=$("input.text[oid="+oid+"]").val();
-            price=price. (/￥/g,"");
+            price=price.replace(/￥/g,"");
             price=price*num;
             sumPrice+=new Number(price);
             totalNumber+=new Number(num);
